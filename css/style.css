@@ -1,0 +1,143 @@
+body {
+    width: 100%;
+    height: 100%;
+}
+section{
+    width: 100%;
+}
+.section-title{
+    font-size: 3rem;
+    text-align: center;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 300;
+    font-style: italic;
+}
+.header-wrap{
+    width: 100%;
+}
+header {
+    color: #fff;
+    width: 100%;
+    padding: 1.3rem 0;
+    background: #FF5964;
+}
+header .logo {
+    display: block;
+    font-size: 1.3rem;
+    margin-left: 8rem;
+}
+header nav ul{
+    float: right;
+    margin-right: 5rem;
+    margin-top: -1.3rem;
+}
+header nav ul li{
+    float: left;
+    margin: 0 1rem;
+}
+header nav ul li a{
+    color: #fff;
+    text-decoration: none;
+}
+#hamburger-button{
+    transision: .3s ease;
+    display: none;
+    position: absolute;
+    width: 35px;
+    height: 30px;
+    top: 1.3rem;
+    left: 80%;
+    transition: .3s ease;
+}
+#hamburger-button span{
+    display: block;
+    width: 100%;
+    height: 4px;
+    left: -2px;
+    margin: 6px 0;
+    background: #fff;
+    transition: .3s ease;
+}
+#hamburger-button .cancel-button:nth-child(1){
+    position: relative;
+    top: 14px;
+    transform: rotate(225deg);
+}
+#hamburger-button .cancel-button:nth-child(2){
+    width: 0;
+    margin-left: 50%;
+}
+#hamburger-button .cancel-button:nth-child(3){
+    position: relative;
+    top: -6px;
+    transform: rotate(-225deg);
+}
+#hamburger-button.cancel-master {
+    top: 1rem;
+    margin-left: 5px;
+}
+.fig-wrap{
+    text-align: center;
+    margin: 34px;
+}
+.fig{
+    display: inline-block;
+    margin: 34px;
+}
+.circle{
+    width: 124.7px;
+    height: 124.7px;
+    border-radius: 50%;
+    background: #FF5964;
+}
+.rect{
+    width: 124.7px;
+    height: 124.7px;
+    background: #6BF178;
+}
+.triangle{
+    width: 0;
+    height: 0;
+    border: solid transparent;
+    border-width: 0 72px 124.7px 72px;
+    border-bottom-color: #FFE74C;
+    
+}
+@media screen and (max-width: 768px) {
+    .header-wrap{
+        position: fixed;
+    }
+    header{
+        position: static;
+    }
+    header nav{
+        margin-top: -20rem;
+
+        float: left;
+        width: 100%;
+        transition: .3s ease;
+        z-index: -1;
+        position: absolute;
+    }
+    .nav-animate{
+        margin-top: 2.6rem;
+    }
+    header nav ul{
+        width: 100%;
+        float: none;
+        text-align: center;
+        background-color: #EFEFD0;
+    }
+    header nav ul li {
+        float: none;
+        padding: 1rem;
+    }
+    header nav ul li a{
+        color: #664E4C;
+        font-size: 1.3rem;
+        letter-spacing: 0.3rem;
+    }
+    #hamburger-button {
+        display: block;
+    }
+}
